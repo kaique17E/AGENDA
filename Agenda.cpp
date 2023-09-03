@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main(){
+    setlocale(LC_ALL,"portuguese");
+    int opcao;
+    char nome;
+    double telefone;
+    cout<<"Agenda de contatos:\n";
+    cout<<"1    -  Adicionar contato:\n";
+    cout<<"2    -  Sair:\n";
+    cin>>opcao;
+
+    if (opcao == 1){
+        cout<<"Digite um nome:\n";
+        cin>>nome;
+        cout <<"Digite um telefone:\n";
+        cin>>telefone;
+    }
+    else if (opcao == 2){
+        cout << "Sair?\n";
+        cout << "Pressione enter por favor!"<<endl;
+    }
+    else {
+        cout << "'Opcao invalida'\n";
+        cout << "Tente Novamente!"<<endl;
+    }
+    getch();
+
+}
